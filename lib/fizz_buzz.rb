@@ -8,4 +8,8 @@ class FizzBuzz
     result
   end
   
+  def values(range)
+    range.map { |v| value v }
+  end
+  
 end
