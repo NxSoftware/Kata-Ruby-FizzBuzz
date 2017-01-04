@@ -1,7 +1,8 @@
 class FizzBuzz
   
   def value(i)
-    i
+    return 'Fizz' if i == 3
+    return i
   end
   
 end
