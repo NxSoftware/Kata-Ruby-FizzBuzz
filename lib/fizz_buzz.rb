@@ -1,9 +1,11 @@
 class FizzBuzz
   
   def value(i)
-    return 'Fizz' if i % 3 == 0
-    return 'Buzz' if i % 5 == 0
-    return i.to_s
+    result = ''
+    result += 'Fizz' if i % 3 == 0
+    result += 'Buzz' if i % 5 == 0
+    result += i.to_s if result.empty?
+    result
   end
   
 end
