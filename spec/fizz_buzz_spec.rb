@@ -3,21 +3,25 @@ RSpec.describe FizzBuzz, '#value' do
     @fizzBuzz = FizzBuzz.new
   end
   
+  def expect_fizzbuzz(value)
+    expect(@fizzBuzz.value value)
+  end
+  
   context 'given 1' do
     it 'returns 1' do
-      expect(@fizzBuzz.value 1).to eq 1
+      expect_fizzbuzz(1).to eq 1
     end
   end
   
   context 'given 2' do
     it 'returns 2' do
-      expect(@fizzBuzz.value 2).to eq 2
+      expect_fizzbuzz(2).to eq 2
     end
   end
   
   context 'given 3' do
     it 'returns Fizz' do
-      expect(@fizzBuzz.value 3).to eq 'Fizz'
+      expect_fizzbuzz(3).to eq 'Fizz'
     end
   end
 end
