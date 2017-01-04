@@ -37,4 +37,10 @@ RSpec.describe FizzBuzz, '#value' do
     end
   end
   
+  context 'given 10' do
+    it 'returns Buzz' do
+      expect_fizzbuzz(10).to eq 'Buzz'
+    end
+  end
+  
 end
