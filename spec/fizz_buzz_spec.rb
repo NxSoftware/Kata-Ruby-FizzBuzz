@@ -9,13 +9,13 @@ RSpec.describe FizzBuzz, '#value' do
   
   context 'given 1' do
     it 'returns 1' do
-      expect_fizzbuzz(1).to eq 1
+      expect_fizzbuzz(1).to eq '1'
     end
   end
   
   context 'given 2' do
     it 'returns 2' do
-      expect_fizzbuzz(2).to eq 2
+      expect_fizzbuzz(2).to eq '2'
     end
   end
   
